@@ -1,0 +1,42 @@
+﻿@model StoreCell.Models.RegisterProv
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>RegisterProv</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProvName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProvName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProvEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProvEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProvPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProvPhone)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProvID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
